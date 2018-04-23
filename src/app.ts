@@ -1,6 +1,6 @@
-import { getScreen } from './interface/screen';
-import { generateLog } from './util/log-util';
-import { GIT_LOG_ARGS, stash } from './util/stash';
+import { getScreen } from 'interface/screen';
+import { generateLog } from 'util/log-util';
+import { GIT_LOG_ARGS, stash } from 'util/stash';
 
 export const run = (args: string[]): void => {
 	stash.set(GIT_LOG_ARGS, args);

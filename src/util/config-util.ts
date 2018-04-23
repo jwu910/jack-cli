@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as osHomedir from 'os-homedir';
 import { join } from 'path';
 
-import { ICommand } from './commands-def';
+import { ICommand } from 'commands-def';
 
 interface IConfig {
 	commands: ICommand[];

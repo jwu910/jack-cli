@@ -6,7 +6,7 @@ import {
 	gitCommitMessage,
 	gitDiffNameOnly,
 	gitTopLevel,
-} from './git-util';
+} from 'git-util';
 
 export const copyCommitMessageToClipboard = (SHA: string): Promise<any> =>
 	gitCommitMessage(SHA)

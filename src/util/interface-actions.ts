@@ -2,15 +2,15 @@ import {
 	notifyError,
 	notifyInfo,
 	notifySuccess,
-} from '../interface/notification';
-import { markSHA } from '../redux/action-creators';
-import { store } from '../redux/store';
+} from 'interface/notification';
+import { markSHA } from 'redux/action-creators';
+import { store } from 'redux/store';
 import {
 	copyCommitMessageToClipboard,
 	copySHAToClipboard,
 	openFilesFromCommitRange,
-} from './external-commands';
-import { sortSHAs } from './git-util';
+} from 'external-commands';
+import { sortSHAs } from 'git-util';
 
 export const doCopyCommitMessage = async () => {
 	try {

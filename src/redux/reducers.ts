@@ -1,4 +1,4 @@
-import { ActionType, IAction, IState, Status, View } from '../types/types';
+import { ActionType, IAction, IState, Status, View } from 'types/types';
 
 const COMMIT_SHA_REGEX: RegExp = new RegExp(/[0-9a-f]{7,40}\b/);
 const INITIAL_STATE: IState = {

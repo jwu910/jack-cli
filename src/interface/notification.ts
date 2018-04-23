@@ -1,6 +1,6 @@
-import { BoxElement } from '../types/types';
-import { readConfig } from '../util/config-util';
-import { getBoxElement } from './interface-elements';
+import { BoxElement } from 'types/types';
+import { readConfig } from 'util/config-util';
+import { getBoxElement } from 'interface-elements';
 
 let notificationContainer: BoxElement;
 let notificationTimeout: number;

@@ -1,17 +1,17 @@
-import { IScreen } from '../types/types';
-import { getCommands, registerCommands } from '../util/command-util';
+import { IScreen } from 'types/types';
+import { getCommands, registerCommands } from 'util/command-util';
 import {
 	doCopyCommitMessage,
 	doCopyCommitSHA,
 	doMarkCommit,
 	doOpenFilesInEditor,
-} from '../util/interface-actions';
-import { generateLog } from '../util/log-util';
-import { getHelpDialog, toggleHelp } from './help-dialog';
-import { getScreenElement } from './interface-elements';
-import { getMainContentContainer } from './main-content-container';
-import { getNotificationContainer } from './notification';
-import { getStatusBar } from './status-bar';
+} from 'util/interface-actions';
+import { generateLog } from 'util/log-util';
+import { getHelpDialog, toggleHelp } from 'help-dialog';
+import { getScreenElement } from 'interface-elements';
+import { getMainContentContainer } from 'main-content-container';
+import { getNotificationContainer } from 'notification';
+import { getStatusBar } from 'status-bar';
 
 export const getScreen = (): IScreen => {
 	const screen: IScreen = getScreenElement({

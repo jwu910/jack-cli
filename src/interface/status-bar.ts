@@ -1,7 +1,7 @@
-import { BoxElement } from '../types/types';
-import { getBoxElement, getTextElement } from './interface-elements';
-import { getLogCompletedStatus } from './log-completed-status';
-import { getProgressIndicator } from './progress-indicator';
+import { BoxElement } from 'types/types';
+import { getBoxElement, getTextElement } from 'interface-elements';
+import { getLogCompletedStatus } from 'log-completed-status';
+import { getProgressIndicator } from 'progress-indicator';
 
 let statusBar: BoxElement;
 

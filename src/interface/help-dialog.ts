@@ -1,9 +1,9 @@
 import {
 	TextElement,
 	TextOptions,
-} from '../types/types';
-import { getHelpText } from '../util/help-text';
-import { getTextElement } from './interface-elements';
+} from 'types/types';
+import { getHelpText } from 'util/help-text';
+import { getTextElement } from 'interface-elements';
 
 let helpDialog: TextElement;
 

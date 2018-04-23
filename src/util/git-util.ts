@@ -1,4 +1,4 @@
-import { spawnPromise } from './promisify-child-process';
+import { spawnPromise } from 'promisify-child-process';
 
 export const gitCommitMessage = (SHA: string): Promise<string> =>
 	spawnPromise('git', ['show', SHA, '-s', '--pretty=format:%s']);

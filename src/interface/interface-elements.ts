@@ -10,7 +10,7 @@ import {
 	ScrollableTextOptions,
 	TextElement,
 	TextOptions,
- } from '../types/types';
+ } from 'types/types';
 
 export const getBoxElement = (options: BoxOptions): BoxElement =>
 	Blessed.box(options);

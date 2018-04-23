@@ -1,4 +1,4 @@
-import { ActionType, IAction, Status, View } from '../types/types';
+import { ActionType, IAction, Status, View } from 'types/types';
 
 export const addCommits = (payload: string[]): IAction =>
 	({ payload, type: ActionType.ADD_COMMITS });

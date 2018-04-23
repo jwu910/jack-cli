@@ -1,5 +1,5 @@
-import { getCommands } from './command-util';
-import { ICommand } from './commands-def';
+import { getCommands } from 'command-util';
+import { ICommand } from 'commands-def';
 
 export const getHelpText = () => {
 	const documentedCommands = documentCommands(getCommands());

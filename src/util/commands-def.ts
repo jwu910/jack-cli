@@ -7,7 +7,7 @@ const ajv = new Ajv();
 
 const commandSchema = JSON.parse(
 	readFileSync(
-		join(__dirname, '../../lib/command-schema.json'), { encoding: 'utf8' }));
+		join(__dirname, '../lib/command-schema.json'), { encoding: 'utf8' }));
 
 export interface ICommand {
 	/**

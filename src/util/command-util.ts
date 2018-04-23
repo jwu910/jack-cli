@@ -2,21 +2,21 @@ import {
 	notifyError,
 	notifyInfo,
 	notifySuccess,
-} from '../interface/notification';
-import { markSHA } from '../redux/action-creators';
-import { store } from '../redux/store';
-import { IScreen } from '../types/types';
+} from 'interface/notification';
+import { markSHA } from 'redux/action-creators';
+import { store } from 'redux/store';
+import { IScreen } from 'types/types';
 import {
 	COMMANDS,
 	ICommand,
 	Placeholder,
 	validateCommand,
-} from './commands-def';
-import { readConfig } from './config-util';
-import { gitCommitMessage, sortSHAs } from './git-util';
-import { generateLog } from './log-util';
-import { spawnPromise } from './promisify-child-process';
-import { uniqByLast } from './uniq-by';
+} from 'commands-def';
+import { readConfig } from 'config-util';
+import { gitCommitMessage, sortSHAs } from 'git-util';
+import { generateLog } from 'log-util';
+import { spawnPromise } from 'promisify-child-process';
+import { uniqByLast } from 'uniq-by';
 
 let declaredCommands: ICommand[];
 

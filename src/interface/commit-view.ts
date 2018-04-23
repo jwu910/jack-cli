@@ -1,9 +1,9 @@
-import { updateIndex, updateView } from '../redux/action-creators';
-import { store } from '../redux/store';
-import { ScrollableTextElement, View } from '../types/types';
-import { gitShow } from '../util/git-util';
-import { getScrollableTextElement } from './interface-elements';
-import { notifyWarning } from './notification';
+import { updateIndex, updateView } from 'redux/action-creators';
+import { store } from 'redux/store';
+import { ScrollableTextElement, View } from 'types/types';
+import { gitShow } from 'util/git-util';
+import { getScrollableTextElement } from 'interface-elements';
+import { notifyWarning } from 'notification';
 
 export const getCommitElement = (): ScrollableTextElement => {
 	const commitElement: ScrollableTextElement = getScrollableTextElement({

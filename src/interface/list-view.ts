@@ -1,12 +1,12 @@
 import {
 	updateIndex,
 	updateView,
-} from '../redux/action-creators';
-import { store } from '../redux/store';
-import { IAction, IListElement, View } from '../types/types';
-import { KEY_NAV_INTERVAL, stash } from '../util/stash';
-import { getListElement } from './interface-elements';
-import { notifyInfo } from './notification';
+} from 'redux/action-creators';
+import { store } from 'redux/store';
+import { IAction, IListElement, View } from 'types/types';
+import { KEY_NAV_INTERVAL, stash } from 'util/stash';
+import { getListElement } from 'interface-elements';
+import { notifyInfo } from 'notification';
 
 let commitListElement: IListElement;
 
