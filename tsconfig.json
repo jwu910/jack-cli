@@ -2,11 +2,19 @@
     "compileOnSave": true,
     "compilerOptions": {
         "alwaysStrict": true,
+        "baseUrl": "src",
+        "paths": {
+            "@interface/*": [ "interface/*" ],
+            "@redux/*": [ "redux/*" ],
+            "@types/*": [ "types/*" ],
+            "@util/*": [ "util/*" ],
+        },
         "lib": [
             "es2015",
             "es2016.array.include"
         ],
         "module": "commonjs",
+        "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": false,
         "noImplicitReturns": true,
